@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
-
     <!-- fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> <!-- Linkeo de tipografia -->
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="CSS/style.css">
 
     <title>Inicio</title>
 </head>
@@ -19,15 +20,28 @@
         <div class="inicio">
             <img class="imagen_inicio" src="imagenes/Star_Wars_Logo.jpg" alt="logo de star wars"> <!-- logo -->
         </div>
-        <nav >
-            <!-- Barra de navegacion -->
-            <ul class="menu">
-                <li><a href="html/peliculas.html">Peliculas</a></li>
-                <li><a href="html/series.html">Series</a></li>
-                <li><a href="html/personajes.html">Personajes</a></li>
-                <li><a href="html/planetas.html">Planetas</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand bg-body-tertiary ">
+            <div class="container-fluid bg-dark">
+              <div class="navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item col-lg-3 col-2">
+                    <a class="nav-link text-white mx-lg-5 mx-4" href="html/peliculas.html">Películas</a>
+                  </li>
+                  <li class="nav-item col-lg-3 col-2">
+                    <a class="nav-link text-white mx-lg-5 mx-4" href="html/personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item col-lg-3 col-2">
+                    <a class="nav-link text-white mx-lg-5 mx-4" href="html/planetas.html">Planetas</a>
+                  </li>
+                  <li class="nav-item col-lg-3 col-2">
+                    <a class="nav-link text-white mx-lg-5 mx-4" href="html/series.html">Series</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
+
     </header>
 
     <br>
@@ -39,4 +53,6 @@
     <footer>
         <p>Todos los derechos reservados a lucasfilms</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

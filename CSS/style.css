@@ -56,31 +56,21 @@ p{
 
 /* Barra de navegacion */
 
-.menu{
-    list-style-type: none;
-    padding: 10px 171.5px;
-    margin: auto;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: beige;
-    background-color: black;
-    padding: 20px;
-    margin-left:200px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
+.navbar .nav-link.text-white:hover {
+    color: #f0a500 !important;
+    text-decoration: underline; 
+    transition: color 0.3s ease; 
 }
 
 /* contenido de la info*/
 
 .info{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
+    padding: 30px;
+    border: 40px;
+    gap: 30px;
 }
 
 .info video{
@@ -92,30 +82,32 @@ p{
     font-size: 25px;
     color: white;
     text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+    border: 40px;
 }
 
-.info img{
-    max-width: 600px;
-    max-height: 600px;
+.info_img{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.txt{
+    max-width: 800px;
 }
 
 /* Planetas */
 
-.planetas1{
-    display: flex;
-    text-align: center;
-    align-items: center;
+.principal__grid{
+    display: grid;
+    grid-template-columns: repeat(3,50%);
+    grid-template-rows: repeat(2,50%);    
 }
 
-.planetas2{
-    display: flex;
+.principal__grid__planeta{
     text-align: center;
-    align-items: center;
-}
-
-.planeta{
     padding: 10px;
-    border: 10px;
+    border: 0px;
 }
 
 /*pie de pagina*/
@@ -125,3 +117,35 @@ footer{
     text-align: right; 
 }
 
+
+@media (max-width: 576px){
+    .imagen_inicio{
+        height: 400px;
+        width: 400px;
+        margin: 30px;
+        border: 30px;
+    }
+
+    .titulo{
+        display: flex;
+        text-align: center;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .info{
+        display: block;
+        align-items: center;
+    }
+
+    .txt{
+        padding: 30px;
+        border: 30px;
+    }
+
+    .principal__grid{
+        display: block;
+    }
+}
