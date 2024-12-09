@@ -1,0 +1,145 @@
+//variables
+@import "../utilidades/variables";
+
+//mixing
+@import "../utilidades/mixing";
+
+
+//
+.home{
+    @include flex-row;
+
+    img{
+        @include tittle-row;
+    }
+}
+
+.navbar .nav-link.text-white:hover {
+    color: #ffec1f!important; 
+    transition: color 0.3s ease; 
+}
+
+
+.titulo{
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 60px;
+
+    img{
+        @include tittle-row;
+    }
+
+    h1{
+        font-size: 50px;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+}
+
+main{
+    .subtitulos{
+        font-size: 25px;
+        color: $text-color;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px;
+        border: 40px;
+    }
+
+    .info{
+        @include flex-row;
+        padding: 30px;
+        border: 40px;
+        gap: 30px;
+    
+        video{
+            @include vid-row;
+        }
+        img{
+            @include img-row;
+        }
+        .txt{
+            max-width: $max-txt;
+            align-content: center;
+        }
+    }
+}
+
+.subtitulo{
+    font-size: 25px;
+    color: $text-color;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+    border: 40px;
+}
+
+.principal__grid{
+    display: grid;
+    grid-template-columns: repeat(3,50%);
+    grid-template-rows: repeat(2,50%);  
+    
+    .principal__grid__planeta{
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+    }
+}
+
+.footer{
+    color: $text-color;
+    text-align: right; 
+}
+
+@media (max-width: 576px){
+
+    header{
+        .titulo{
+        display: block;
+        justify-content: center;
+            .imagen_inicio{
+                height: 400px;
+                width: 400px;
+                margin: 30px;
+                border: 30px; 
+            }
+        }
+    }
+
+    h1{
+        display: none;
+    }
+
+    main{
+        .info{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            img{
+                justify-content: center;
+                align-items: center; 
+            }
+            .txt{
+                padding: 30px;
+                border: 30px;
+            }
+        }
+    }
+  
+    .principal__grid{
+        display: block;
+    }
+
+    .descartable{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+
+    .titulo{
+        gap: 10px;
+    }
+}

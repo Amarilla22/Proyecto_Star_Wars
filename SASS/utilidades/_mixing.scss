@@ -1,0 +1,19 @@
+@mixin flex-row{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin img-row{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+@mixin vid-row{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+@mixin tittle-row{
+    max-width: 500px;
+    max-height: 600px;
+}
